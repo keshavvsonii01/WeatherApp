@@ -1,0 +1,97 @@
+.container-fluid {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #333; /* Dark background color */
+  color: #fff; /* Light text color */
+  align-items: center ;
+}
+
+.navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  letter-spacing: 5px;
+  background-color: #222; /* Dark background color for the navbar */
+  color: #fff; /* Light text color */
+}
+
+.navbar-nav  li a:hover {
+  color: #c7cecd !important; /* Highlight color */
+}
+
+.new {
+  padding: 2%;
+  border: 1px ridge none;
+  /* box-shadow: #222; */
+  border-radius: 50px;
+  background: #f6f5f5;
+  box-shadow:  20px 20px 20px #cbcaca,
+              -20px -20px 20px #ffffff;
+}
+
+.footer-padding {
+  padding-bottom: 60px;
+  color: #fff; /* Light text color */
+}
+
+.footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #222; /* Dark background color for the footer */
+}
+
+.footer p {
+  margin-top: 25px;
+  font-size: 12px;
+  color: #fff; /* Light text color */
+}
+
+button {
+  --color: #0077ff;
+  font-family: inherit;
+  display: inline-block;
+  width: 5em;
+  height: 2em;
+  line-height: 1.6em;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 20px;
+  font-size: 17px;
+  z-index: 1;
+  color: var(--color);
+  border: 2px solid var(--color);
+  border-radius: 6px;
+  position: relative;
+}
+
+button::before {
+  position: absolute;
+  content: "";
+  background: var(--color);
+  width: 150px;
+  height: 200px;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+button:hover {
+  color: white;
+}
+
+button:before {
+  top: 100%;
+  left: 100%;
+  transition: 0.3s all;
+}
+
+button:hover::before {
+  top: -30px;
+  left: -30px;
+}
+
